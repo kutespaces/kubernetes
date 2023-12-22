@@ -31,7 +31,7 @@ To properly view the rendered README either view it in your browser or open the 
 
 ## Exercises
 
-Exercises are updated daily from [dgkanatsios/ckad-exercises](https://github.com/dgkanatsios/ckad-exercises).
+Exercises are updated daily from [dgkanatsios/ckad-exercises](https://github.com/dgkanatsios/ckad-exercises) 🙏. I used those exercises myself when preparing for CKAD and passed without issues.
 
 
 1. [Core Concepts](exercises/a.core_concepts.md)
