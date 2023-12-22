@@ -23,7 +23,6 @@
         },
         "ghcr.io/kutespaces/devcontainers-features/kubectx-kubens:1": {},
         "ghcr.io/devcontainers-contrib/features/pre-commit:2": {},
-        "ghcr.io/devcontainers-contrib/features/podman-homebrew:1": {}
     },
     "overrideFeatureInstallOrder": [
         "ghcr.io/devcontainers/features/common-utils",
