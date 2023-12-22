@@ -50,6 +50,7 @@ Congratulations on completing the exercises! You've successfully navigated throu
 
 - Check out [killer.sh](https://killer.sh/) for a CKAD exam simulation.
 - Check out [omerbsezer/Fast-Kubernetes](https://github.com/omerbsezer/Fast-Kubernetes) for more exercises that can be executed in this environment.
+- Check out [kutespaces/argocd](https://github.com/kutespaces/argocd) to learn how to properly deploy applications to Kubernetes.
 
 ## Troubleshooting
 
