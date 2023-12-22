@@ -1,0 +1,58 @@
+{
+    "name": "Kutespace: Kubernetes",
+    "image": "ghcr.io/kutespaces/kubernetes:devcontainer",
+    "runArgs": [
+        "--init",
+        "--privileged"
+    ],
+    "overrideCommand": true,
+    "containerUser": "vscode",
+    "containerEnv": {
+        "EDITOR": "code --wait"
+    },
+    "customizations": {
+        "vscode": {
+            "settings": {
+                "terminal.integrated.defaultProfile.linux": "zsh",
+                "files.trimTrailingWhitespace": true,
+                "files.trimFinalNewlines": true,
+                "files.insertFinalNewline": true,
+                "workbench.welcomePage.walkthroughs.openOnInstall": false,
+                "workbench.editorAssociations": {
+                    "*.md": "vscode.markdown.preview.editor"
+                }
+            },
+            "extensions": [
+                "golang.go",
+                "ms-azuretools.vscode-docker",
+                "ms-kubernetes-tools.vscode-kubernetes-tools",
+                "gruntfuggly.todo-tree",
+                "mutantdino.resourcemonitor",
+                "redhat.vscode-yaml",
+                "humao.rest-client"
+            ]
+        },
+        "codespaces": {
+            "openFiles": [
+                "README.md"
+            ]
+        }
+    },
+    "hostRequirements": {
+        "cpus": 2
+    },
+    "forwardPorts": [
+        6443,
+        8080,
+    ],
+    "portsAttributes": {
+        "6443": {
+            "label": "K8s API"
+        },
+        "8080": {
+            "label": "k3d Ingress"
+        },
+    },
+    "waitFor": "postCreateCommand",
+    "onCreateCommand": "/bin/bash -c .devcontainer/on-create.sh",
+}

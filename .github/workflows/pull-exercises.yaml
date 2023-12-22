@@ -1,0 +1,46 @@
+name: Pull CKAD exercises
+
+on:
+  workflow_dispatch:
+  schedule:
+    - cron: '0 0 * * *' # Runs every day at midnight
+
+jobs:
+  pull-files:
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: Checkout current repository
+      uses: actions/checkout@v3
+      with:
+        fetch-depth: 0
+
+    - name: Create exercises directory if it doesn't exist
+      run: mkdir -p exercises
+
+    - name: Pull external files
+      run: |
+        base_url="https://raw.githubusercontent.com/dgkanatsios/CKAD-exercises/master"
+        files=(
+          "a.core_concepts.md"
+          "b.multi_container_pods.md"
+          "c.pod_design.md"
+          "d.configuration.md"
+          "e.observability.md"
+          "f.services.md"
+          "g.state.md"
+          "h.helm.md"
+          "i.crd.md"
+          "j.podman.md"
+        )
+        for file in "${files[@]}"; do
+          curl -o "exercises/$file" "$base_url/$file"
+        done
+
+    - name: Commit and push if there are changes
+      run: |
+        git config --global user.email "action@github.com"
+        git config --global user.name "GitHub Action"
+        git add exercises/
+        git commit -m "Update exercise files from external repository" || exit 0 # Exit with 0 if no changes
+        git push
