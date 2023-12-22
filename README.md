@@ -20,7 +20,7 @@ As you embark on these exercises, you're set to learn key practices in modern ap
 
 ## Getting Started
 
-To begin, [launch a new Codespace using the default settings.](https://codespaces.new/kutespaces/argocd)
+To begin, [launch a new Codespace using the default settings.](https://codespaces.new/kutespaces/kubernetes)
 
 Running this Codespace in the browser will not work. As soon as the code space is ready, launch it in your local VS Code Desktop.
 To do so extend the menu in the left upper corner and select `Open in VS Code Desktop`.
