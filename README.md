@@ -31,8 +31,9 @@ To properly view the rendered README either view it in your browser or open the 
 
 ## Exercises
 
-Exercises are updated daily from [dgkanatsios/ckad-exercises](https://github.com/dgkanatsios/ckad-exercises) 🙏. I used those exercises myself when preparing for CKAD and passed without issues.
-
+Run the following exercises in your Codespace's terminal.
+Verify that the setup works by executing `kubectl get nodes` first.
+The output should show a single node in your cluster.
 
 1. [Core Concepts](exercises/a.core_concepts.md)
 2. [Multi-container pods](exercises/b.multi_container_pods.md)
@@ -43,6 +44,8 @@ Exercises are updated daily from [dgkanatsios/ckad-exercises](https://github.com
 7. [State persistence](exercises/g.state.md)
 8. [Helm](exercises/h.helm.md)
 9. [Custom Resource Definitions](exercises/i.crd.md)
+
+Exercises are updated daily from [dgkanatsios/ckad-exercises](https://github.com/dgkanatsios/ckad-exercises) 🙏
 
 ### Congratulations!
 
@@ -57,5 +60,3 @@ Congratulations on completing the exercises! You're now one step closer to achie
 ## Troubleshooting
 
 Encountering issues? Let us know to assist you and others who may face similar challenges.
-
-
