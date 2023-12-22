@@ -46,7 +46,7 @@ Exercises are updated daily from [dgkanatsios/ckad-exercises](https://github.com
 
 ### Congratulations!
 
-Congratulations on completing the exercises! You've successfully navigated through a series of tasks that have introduced you to Kubernetes and prepared you for the CKAD exam. 
+Congratulations on completing the exercises! You're now one step closer to achieving your CKAD certification, having gained valuable hands-on experience with Kubernetes.
 
 ## What's next
 
