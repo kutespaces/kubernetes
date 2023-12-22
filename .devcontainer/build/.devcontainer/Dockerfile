@@ -5,3 +5,5 @@ FROM debian:bullseye
 RUN apt-get update && \
     apt-get install -y netcat && \
     rm -rf /var/lib/apt/lists/*
+
+RUN curl https://raw.githubusercontent.com/helm/helm/main/scripts/get-helm-3 | bash && chmod +x /usr/local/bin/helm
