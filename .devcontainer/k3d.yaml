@@ -17,10 +17,6 @@ ports:
   nodeFilters:
   - loadbalancer
 
-registries:
-  use:
-    - k3d-registry.localhost:5500
-
 options:
   k3d:
     wait: true
