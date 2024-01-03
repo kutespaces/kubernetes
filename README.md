@@ -6,7 +6,7 @@ Welcome to Kutespace's Kubernetes repository! This guide will help you spin up a
 
 "Kubernetes is a portable, extensible, open-source platform for managing containerized workloads and services, that facilitates both declarative configuration and automation. It has a large, rapidly growing ecosystem. Kubernetes services, support, and tools are widely available." (Ref: Kubernetes.io)
 
-"Kubernetes is a super elegant given its power. I assume it will stick around for a long time. Nowadays a lot of software is shipped as containers and you gotta run it. Kubernetes is easier to use than CaaS solutions such as Amazon Elastic Container Service or Azure Container Apps because Kubernetes tooling is widely available to simplify your life." - Nico Duldhardt.
+"Kubernetes is super elegant, given its power. I assume it will stick around for a long time. Nowadays a lot of software is shipped as containers and you gotta run them. Kubernetes is easier to use than CaaS solutions such as Amazon Elastic Container Service or Azure Container Apps because Kubernetes tooling is widely available to simplify your life." - Nico Duldhardt.
 
 More information:
 - [Kubernetes Docs](https://kubernetes.io/docs/home/)
