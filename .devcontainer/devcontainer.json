@@ -20,7 +20,16 @@
                 "workbench.welcomePage.walkthroughs.openOnInstall": false,
                 "workbench.editorAssociations": {
                     "*.md": "vscode.markdown.preview.editor"
-                }
+                },
+                "workbench.colorCustomizations": {
+                    "statusBar.background": "#24f98f",
+                    "statusBar.foreground": "#073642",
+                    "statusBarItem.remoteBackground": "#073642",
+                    "statusBarItem.remoteHoverBackground": "#002b36",
+                    "statusBarItem.remoteForeground": "#24f98f",
+                    "statusBarItem.remoteHoverForeground": "#fff"
+                },
+                "window.title": "😽 Kutespace: ${activeEditorShort}${separator}${rootNameShort}"
             },
             "extensions": [
                 "golang.go",
