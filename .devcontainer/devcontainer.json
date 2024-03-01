@@ -35,10 +35,8 @@
                 "golang.go",
                 "ms-azuretools.vscode-docker",
                 "ms-kubernetes-tools.vscode-kubernetes-tools",
-                "gruntfuggly.todo-tree",
                 "mutantdino.resourcemonitor",
-                "redhat.vscode-yaml",
-                "humao.rest-client"
+                "redhat.vscode-yaml"
             ]
         },
         "codespaces": {
@@ -52,7 +50,7 @@
     },
     "forwardPorts": [
         6443,
-        8080,
+        8080
     ],
     "portsAttributes": {
         "6443": {
@@ -63,5 +61,5 @@
         },
     },
     "waitFor": "postCreateCommand",
-    "onCreateCommand": "/bin/bash -c .devcontainer/on-create.sh",
+    "onCreateCommand": "/bin/bash -c .devcontainer/on-create.sh"
 }
