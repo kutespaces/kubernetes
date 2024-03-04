@@ -32,7 +32,6 @@
                 "window.title": "😽 Kutespace: ${activeEditorShort}${separator}${rootNameShort}"
             },
             "extensions": [
-                "golang.go",
                 "ms-azuretools.vscode-docker",
                 "ms-kubernetes-tools.vscode-kubernetes-tools",
                 "mutantdino.resourcemonitor",
@@ -58,7 +57,7 @@
         },
         "8080": {
             "label": "k3d Ingress"
-        },
+        }
     },
     "waitFor": "postCreateCommand",
     "onCreateCommand": "/bin/bash -c .devcontainer/on-create.sh"
