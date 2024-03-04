@@ -36,8 +36,7 @@
                 "ms-azuretools.vscode-docker",
                 "ms-kubernetes-tools.vscode-kubernetes-tools",
                 "mutantdino.resourcemonitor",
-                "redhat.vscode-yaml",
-                "hnw.vscode-auto-open-markdown-preview"
+                "redhat.vscode-yaml"
             ]
         },
         "codespaces": {
@@ -59,7 +58,7 @@
         },
         "8080": {
             "label": "k3d Ingress"
-        }
+        },
     },
     "waitFor": "postCreateCommand",
     "onCreateCommand": "/bin/bash -c .devcontainer/on-create.sh"
